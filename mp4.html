@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мультимедійна сторінка</title>
+</head>
+<body>
+    <h1>Підтримка мультимедійних форматів</h1>
+
+    <h2>1. Формат AVI</h2>
+    <p>Відео у форматі AVI:</p>
+    <embed src="2.avi" width="640" height="360" autostart="false"></embed>
+    <p><strong>Переваги:</strong> Висока якість відео. <br>
+       <strong>Недоліки:</strong> Великий розмір файлу.</p>
+
+    <h2>2. Формат MP3</h2>
+    <p>Аудіо у форматі MP3:</p>
+    <audio controls>
+        <source src="ivo3.mp3" type="audio/mpeg">
+        Ваш браузер не підтримує відтворення аудіо.
+    </audio>
+    <p><strong>Переваги:</strong> Висока якість звуку при невеликому розмірі файлу. <br>
+       <strong>Недоліки:</strong> Стиснення може знизити якість.</p>
+
+    <h2>3. Формат Flash</h2>
+    <p>Флеш-анімація:</p>
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="640" height="480"
+            codebase="http://active.macromedia.com/flash5/cabs/swflash.cab#version=5.0.0,0">
+        <param name="movie" value="media/animation.swf">
+        <param name="play" value="true">
+        <param name="loop" value="true">
+        <param name="quality" value="high">
+        <embed src="1.swf" width="640" height="480" play="true" loop="true"
+               quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer">
+        </embed>
+    </object>
+    <p><strong>Переваги:</strong> Можливість створення інтерактивних анімацій. <br>
+       <strong>Недоліки:</strong> Не всі сучасні браузери підтримують Flash.</p>
+
+</body>
+</html>
